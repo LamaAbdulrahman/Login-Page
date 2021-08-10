@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<title>Login</title>
+
+<body style="background-image: linear-gradient( rgb(255, 248, 181),rgb(255, 186, 181) );">
+
+
+<div id="loginPanel" style="background-color: rgb(255, 255, 255); width: 600px; height: 500px; text-align: center; border: 2px solid; padding: 10px;box-shadow: 6px 4px 8px 4px #f1a3a3; border-color: rgb(165, 165, 165); "  >
+    <form id="myForm"  method ="POST" target="blank" >
+
+<h1 style="padding-top: 50px; font-size: 70px; font-family: 'Courier New', Courier, monospace; color:rgb(61, 58, 57);">WELCOME!</h1>
+<di>
+    <input type="text" id="ssid" value="SSID" autocomplete="off" style="width: 300px; height: 30px; text-align: center; color: gray;" onfocus="if(this.value=='SSID') this.value='';">
+</di>
+<div>
+    <input type="password" id="myPass" value="PASSWORD" style="width: 304px; height: 30px; text-align: center; color: gray; margin-top: 10px; margin-left: 24px;" onfocus="if(this.value=='PASSWORD') this.value='';"> <img src="https://i.ibb.co/xgjxyHK/59394.png" alt="59394" width="20px" height="20px"  onclick="myFunction()">
+</div>
+
+<div>
+    <input type="submit"  Value="LOGIN" name=" LOGIN" style="margin-top: 55px;" onclick="validate()">
+</div>
+    </form>  
+</div>
+   
+
+</body>
+
+<script>
+// Below function hides or shows the password
+function myFunction() {
+  var x = document.getElementById("myPass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+// Below function Executes on click of login button.
+function validate(){
+var id = document.getElementById("ssid").value;
+var password = document.getElementById("myPass").value;
+if ( id == "HUAWEI-ABCD" && password == "123456"){
+alert ("Login successfully");
+window.location = "Robot3.html"; // Redirecting to other page.
+return false;
+}
+else{
+    alert ("Login failed!");
+    location.reload();
+return false;
+}
+
+}
+</script>
+
+</html>
+
