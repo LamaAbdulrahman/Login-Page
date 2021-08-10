@@ -12,7 +12,7 @@ This is a login interface, it comes before the robot control panel page.
 
 <img width="501" alt="LOGN-3" src="https://user-images.githubusercontent.com/86415915/128812544-e9c4fedf-515e-47e1-8808-4cd54666b7d9.PNG">
 
-2- Failed attempt:
+2- Failed attempt: (wrong password)
 
 <img width="509" alt="LOGIN-4" src="https://user-images.githubusercontent.com/86415915/128812574-b6c6de78-79aa-44d6-b2ee-89211c39959a.PNG">
 
